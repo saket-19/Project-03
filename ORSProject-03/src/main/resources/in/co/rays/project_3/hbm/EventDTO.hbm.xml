@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 21-Jan-2026, 11:26:33 am by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="in.co.rays.project_3.dto.EventDTO" table="ST_EVENT">
+		<id name="id" type="long">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+		<property name="eventName" type="java.lang.String">
+			<column name="EVENT_NAME" />
+		</property>
+		<property name="eventDate" type="java.util.Date">
+			<column name="EVENT_DATE" />
+		</property>
+		<property name="eventType" type="java.lang.String">
+			<column name="EVENT_TYPE" />
+		</property>
+		<property name="category" type="java.lang.String">
+			<column name="CATEGORY" />
+		</property>
+		<property name="createdBy" type="java.lang.String"
+			length="50">
+			<column name="CREATED_BY" />
+		</property>
+		<property name="modifiedBy" type="java.lang.String"
+			length="50">
+			<column name="MODIFIED_BY" />
+		</property>
+		<property name="createdDatetime" type="java.sql.Timestamp">
+			<column name="CREATED_DATETIME" />
+		</property>
+		<property name="modifiedDatetime" type="java.sql.Timestamp">
+			<column name="MODIFIED_DATETIME" />
+		</property>
+	</class>
+</hibernate-mapping>
