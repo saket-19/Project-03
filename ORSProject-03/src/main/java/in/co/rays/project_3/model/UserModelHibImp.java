@@ -191,7 +191,7 @@ public class UserModelHibImp implements UserModelInt {
 			session = HibDataSource.getSession();
 			Criteria criteria = session.createCriteria(UserDTO.class);
 			if (dto != null) {
-				if (dto.getId() != null) {
+				if (dto.getId() != null && dto.getId()>0) {
 					criteria.add(Restrictions.like("id", dto.getId()));
 				}
 				if (dto.getFirstName() != null && dto.getFirstName().length() > 0) {
@@ -326,7 +326,7 @@ public class UserModelHibImp implements UserModelInt {
 		String message = EmailBuilder.getForgetPasswordMessage(map);
 		EmailMessage msg = new EmailMessage();
 		msg.setTo(login);
-		msg.setSubject("SUNARYS ORS Password reset");
+		msg.setSubject("SUNRAYS ORS Password reset");
 		msg.setMessage(message);
 		msg.setMessageType(EmailMessage.HTML_MSG);
 		EmailUtility.sendMail(msg);

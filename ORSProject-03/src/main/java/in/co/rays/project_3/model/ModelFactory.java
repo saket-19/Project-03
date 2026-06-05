@@ -447,4 +447,16 @@ public final class ModelFactory {
 		}
 		return chatRoomModel;
 	}
+	public HospitalSystemModelInt getHospitalSystemModel() {
+		HospitalSystemModelInt hospitalSystemModel = (HospitalSystemModelInt) modelCache.get("hospitalSystemModel");
+		if (hospitalSystemModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				hospitalSystemModel = new HospitalSystemModelHibImp();
+			}
+			
+			modelCache.put("hospitalSystemModel", hospitalSystemModel);
+		}
+		return hospitalSystemModel;
+	}
+	
 }

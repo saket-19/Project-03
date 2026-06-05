@@ -237,6 +237,13 @@
 						</a> <a class="dropdown-item" href="<%=ORSView.CHAT_ROOM_LIST_CTL%>">
 							<i class="fa fa-list"></i> Chat Room List
 						</a>
+						<a class="dropdown-item"
+						href="<%=ORSView.HOSPITAL_SYSTEM_CTL%>"> <i
+						class="fa fa-hospital-o"></i> Add Hospital System
+					</a> <a class="dropdown-item"
+						href="<%=ORSView.HOSPITAL_SYSTEM_LIST_CTL%>"> <i
+						class="fa fa-list"></i> Hospital System List
+					</a>
 					</div></li>
 
 

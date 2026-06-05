@@ -16,7 +16,7 @@ import in.co.rays.project_3.util.HibDataSource;
 
 /**
  * Hibernate implements of Student model
- * @author krati
+ * @author saket
  *
  */
 public class StudentModelHibImp implements StudentModelInt {
@@ -185,7 +185,7 @@ public class StudentModelHibImp implements StudentModelInt {
             session = HibDataSource.getSession();
             Criteria criteria = session.createCriteria(StudentDTO.class);
            if(dto!=null){
-            if (dto.getId() != null ) {
+            if (dto.getId() != null && dto.getId()>0) {
                 criteria.add(Restrictions.eq("id", dto.getId()));
             }
             if (dto.getFirstName() != null && dto.getFirstName().length() > 0) {

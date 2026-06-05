@@ -1,7 +1,7 @@
 package in.co.rays.project_3.exception;
 
 /**
- * @author krati
+ * @author saket
  */
 public class DatabaseException extends Exception{
 	

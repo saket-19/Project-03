@@ -17,7 +17,7 @@ import in.co.rays.project_3.util.HibDataSource;
 /**
  * Hibernate implements of Inquiry model
  * 
- * @author krati
+ * @author saket
  *
  */
 public class InquiryModelHibImp implements InquiryModelInt {

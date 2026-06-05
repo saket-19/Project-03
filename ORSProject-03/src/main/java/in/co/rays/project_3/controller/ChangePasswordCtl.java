@@ -23,7 +23,7 @@ import in.co.rays.project_3.util.ServletUtility;
 /**
  * change password operation functionality perform
  * 
- * @author krati
+ * @author saket
  *
  */
 @WebServlet(urlPatterns = { "/ctl/ChangePasswordCtl" })

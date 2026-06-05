@@ -203,6 +203,7 @@ public class UserCtl extends BaseCtl {
 
 					try {
 						model.add(dto);
+						dto.setId(0L);
 						ServletUtility.setSuccessMessage("Data is successfully saved", request);
 					} catch (ApplicationException e) {
 						log.error(e);
@@ -214,6 +215,7 @@ public class UserCtl extends BaseCtl {
 					}
 
 				}
+				ServletUtility.setDto(dto, request);
 			//	
 
 			} catch (ApplicationException e) {

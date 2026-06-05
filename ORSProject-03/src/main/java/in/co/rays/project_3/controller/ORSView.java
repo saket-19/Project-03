@@ -199,4 +199,9 @@ public interface ORSView {
 	public String CHAT_ROOM_LIST_VIEW = PAGE_FOLDER + "/ChatRoomListView.jsp";
 	public String CHAT_ROOM_CTL = APP_CONTEXT + "/ctl/ChatRoomCtl";
 	public String CHAT_ROOM_LIST_CTL = APP_CONTEXT + "/ctl/ChatRoomListCtl";
+	
+	public String HOSPITAL_SYSTEM_VIEW = PAGE_FOLDER + "/HospitalSystemView.jsp";
+	public String HOSPITAL_SYSTEM_LIST_VIEW = PAGE_FOLDER + "/HospitalSystemListView.jsp";
+	public String HOSPITAL_SYSTEM_CTL = APP_CONTEXT + "/ctl/HospitalSystemCtl";
+	public String HOSPITAL_SYSTEM_LIST_CTL = APP_CONTEXT + "/ctl/HospitalSystemListCtl";
 }
